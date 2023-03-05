@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>AI Writing Tool | Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+        <div class="toggle">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="cards">
+          <a href="#" class="card">
+            <div class="icon purple">
+              <img src="images/chatbot.png" alt="Chat" />
+            </div>
+            <h4>Chat</h4>
+            <span class="try">Try Now</span>
+          </a>
+          <a href="#" class="card">
+            <div class="icon red">
+              <img src="images/template.png" alt="Templates" />
+            </div>
+            <h4>Templates</h4>
+            <span class="try">Try Now</span>
+          </a>
+          <a href="#" class="card">
+            <div class="icon green">
+              <img src="images/translate.png" alt="Translate" />
+            </div>
+            <h4>Translate</h4>
+            <span class="try">Try Now</span>
+          </a>
+          <a href="#" class="card">
+            <div class="icon purple">
+              <img src="images/file.png" alt="Summarizer" />
+            </div>
+            <h4>Summarizer</h4>
+            <span class="try">Try Now</span>
+          </a>
+          <a href="#" class="card">
+            <div class="icon red">
+              <img src="images/document.png" alt="Artice" />
+            </div>
+            <h4>Article</h4>
+            <span class="try">Try Now</span>
+          </a>
+          <a href="#" class="card">
+            <div class="icon green">
+              <img src="images/text.png" alt="Text" />
+            </div>
+            <h4>Improve Text</h4>
+            <span class="try">Try Now</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      const toggle = document.querySelector(".toggle");
+      let clicked = false;
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        clicked = !clicked;
+        clicked
+          ? (toggle.innerHTML = `<i class="fa-solid fa-sun"></i>`)
+          : (toggle.innerHTML = `<i class="fa-solid fa-moon"></i>`);
+      });
+    </script>
+  </body>
+</html>
