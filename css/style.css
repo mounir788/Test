@@ -141,7 +141,7 @@ h1 {
 @media (max-width: 991px) {
   section,
   .container {
-    margin: 0 50px;
+    margin: 0 25px;
   }
   .cards {
     grid-template-columns: 1fr;
