@@ -43,21 +43,19 @@ header {
 }
 .container {
   margin: 0 250px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -webkit-flexbox;
-  display: -moz-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 80px;
+}
 .logo img {
-  display: block;
-  height: 40px;
-  width: 40px;
-  width: fit-content;
+  max-width: 50%;
 }
 .toggle {
   cursor: pointer;
@@ -75,12 +73,8 @@ h1 {
   text-align: left;
 }
 .cards {
-  display: -ms-grid;
   display: grid;
-  display: -webkit-grid;
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  -webkit-grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .card {
@@ -115,6 +109,9 @@ h1 {
 .green {
   border-color: var(--green);
 }
+body.dark .card:nth-child(1) .icon {
+  border-color: #aaee00;
+}
 .card h4 {
   font-size: 25px;
   font-family: 600;
@@ -141,7 +138,7 @@ h1 {
 @media (max-width: 991px) {
   section,
   .container {
-    margin: 0 25px;
+    margin: 0 15px;
   }
   .cards {
     grid-template-columns: 1fr;
