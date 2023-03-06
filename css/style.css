@@ -48,14 +48,14 @@ header {
   align-items: center;
 }
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 80px;
+  display: inline-block;
+  /* justify-content: center;
+  align-items: center; */
+  height: 35px;
+  /* width: 80px; */
 }
 .logo img {
-  max-width: 50%;
+  max-width: 100%;
 }
 .toggle {
   cursor: pointer;
